@@ -62,11 +62,11 @@ $(document).ready(function(){
 </ol>
 
 <h3>Customize the input file with CSS</h3>
-		<p>You can fully customize the look and feel of your file input in two ways:</p>
-		<dl>
-			<dt>By using the same CSS code to stylize all your File Input elements through the following classes</dt>
-			<dd>
-				<pre>.NFI-wrapper {
+<p>You can fully customize the look and feel of your file input in two ways:</p>
+<dl>
+	<dt>By using the same CSS code to stylize all your File Input elements through the following classes</dt>
+	<dd>
+		<pre>.NFI-wrapper {
 	// the container div
 }
 .NFI-button {

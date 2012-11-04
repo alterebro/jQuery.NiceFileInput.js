@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nice File Input jQuery Plugin. NiceFileInput.js</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Jorge Moreno. @alterebro" />
+	<meta name="description" content="NiceFileInput is a jQuery plugin which styles file input elements" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script src="jquery.nicefileinput.min.js"></script>
+<script>
+/* <![CDATA[ */             
+$(document).ready(function(){
+	$("input[type=file].nicefileinput").nicefileinput();
+	$("#download-link").click(function(){
+		$('html, body').animate({scrollTop: $("#download").offset().top},'slow');
+		return false;
+	});
+});
+/* ]]> */
+</script>
+<style>
+html {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+	background: #eee;
+	color: #222;
+	width: 90%;
+	max-width: 840px;
+	padding: 20px 15px 50px 15px;
+	margin: 30px auto;
+}
+h1 {
+	font-size: 52px;
+	font-weight: normal;
+	letter-spacing: -2px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 0px 1px 0px #fff;
+}
+h2 {
+	font-size: 26px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+	margin: 0 0 10px 0;
+	padding: 20px 0 0 0;
+	border-bottom: dotted #ccc 1px;
+	line-height: 130%;
+}
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 140%;
+	text-shadow: 0px 1px 0px #fff;
+}
+a {
+	color: #0192DD;
+	text-decoration: none;
+	border-bottom: dotted #0192DD 1px;
+}
+a:hover {
+	color: #000;
+	border-bottom: dotted #000 1px;
+}
+
+code {
+	background: #ddd;
+	color: #333;
+	text-shadow: 0px 1px 0px #eee;
+	padding: 0 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family: monospace;
+}
+pre {
+	background: #222;
+	color: #ddd;
+	padding: 15px 20px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family: 'Consolas', monospace;
+	font-size: 13px;
+	line-height: 140%;
+}
+pre em {
+	color: #fff;
+	font-style: normal;
+	background: #111;
+}
+
+ol {
+	margin: 0 0 20px 0;
+	padding: 0 0 0 20px;
+}
+ol li {
+	list-style: decimal;
+}
+ol li p {
+	margin: 0 0 5px 0;
+}
+dl {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+dl dt,
+dl dd {
+	margin: 0;
+	padding: 0;
+}
+a, div, input {
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+
+
+
+.examples-list dt {
+	font-size: 13px;
+	border-bottom: dotted #ccc 1px;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	display: list-item;
+	list-style: inside square;
+}
+.examples-list dd {
+	padding: 10px 0;
+}
+
+
+
+
+
+
+#download-link {
+	display: block;
+	float: left;
+	width: auto;
+	margin: 0 0 20px 0;
+	padding: 0 30px;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0px -1px 0px #0172bd;
+	border: solid #0172bd 1px;
+	border-bottom: solid #00428d 1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+
+	background-color: #0192DD;
+	background-image: linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -o-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -moz-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -webkit-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -ms-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #1774A3),
+		color-stop(0.56, #0194DD)
+	);
+	
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,.2), 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,.2), 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,.2), 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1); 	
+	
+	color: #fff;
+	height: 30px;
+	line-height: 30px;	
+}
+
+
+
+
+
+/*
+.NFI-wrapper {}
+.NFI-button {}
+.NFI-button:hover {}
+.NFI-filename {}
+.NFI-current {}
+*/
+
+.nice {
+	font-family: arial;
+	font-size: 12px;
+	-webkit-box-shadow: 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1);
+	box-shadow: 0px 1px 0px #fff, 0px -1px 0px rgba(0,0,0,.1); 
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.nice .NFI-button {
+	-moz-border-radius-topleft: 3px; 
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px; 
+	border-bottom-left-radius: 3px;
+
+	background-color: #0192DD;
+
+	background-image: linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -o-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -moz-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -webkit-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -ms-linear-gradient(bottom, #1774A3 0%, #0194DD 56%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #1774A3),
+		color-stop(0.56, #0194DD)
+	);
+	text-shadow: 0px -1px 0px #0172bd;
+	border: solid #0172bd 1px;
+	border-bottom: solid #00428d 1px;
+	
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255,255,255,.2);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255,255,255,.2);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,.2); 	
+	
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+.nice .NFI-button:hover {
+	background: #333;
+	text-shadow: 0px -1px 0px #111;
+	border: solid #000 1px;
+	
+}
+.nice .NFI-filename {
+	-moz-border-radius-topright: 3px; 
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px; 
+	border-bottom-right-radius: 3px;
+
+	width: 200px;
+	border: solid #777 1px;
+	border-left: none;
+	height: 30px;
+	line-height: 30px;
+	
+	background: #fff;
+	-webkit-box-shadow: inset 0px 2px 0px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0px 2px 0px rgba(0,0,0,.05);
+	box-shadow: inset 0px 2px 0px rgba(0,0,0,.05); 
+
+	color: #777;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.test .NFI-button{
+	background-color: #DD9201; /* 1774A3, 0192DD : A37417, DD9201 */ 
+	background-image: linear-gradient(bottom, #A37417 0%, #DD9201 56%);
+	background-image: -o-linear-gradient(bottom, #A37417 0%, #DD9201 56%);
+	background-image: -moz-linear-gradient(bottom, #A37417 0%, #DD9201 56%);
+	background-image: -webkit-linear-gradient(bottom, #A37417 0%, #DD9201 56%);
+	background-image: -ms-linear-gradient(bottom, #A37417 0%, #DD9201 56%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #A37417),
+		color-stop(0.56, #DD9201)
+	);
+	text-shadow: none;
+	border: solid #bb7200 1px;
+	border-bottom: solid #995200 1px;
+}
+.test .NFI-button:hover {
+	background: #bb7200;
+	text-shadow: none;
+	border: solid #995200 1px;	
+}
+.test .NFI-filename {
+	border: solid #eee 1px;
+	color: #777;
+}
+
+</style>
+
+	
+</head>
+<body>
+
+<h1><strong>NiceFileInput.js</strong> jQuery Plugin</h1>
+<h2>jQuery PlugIn which makes easy to stylize with CSS the file inputs at your forms.</h2>
+
+<h3>About</h3>
+<p>
+	Customizing the HTML file input elements (<code>&lt;input type="file" /&gt;</code>) is a time-consuming 
+	task which doesnt result the same way on different browsers. NiceFileInput makes things easy and transforms 
+	the fileinputs on 3 different HTML elements (a text input, a button and a div container) which you can 
+	style with CSS the way you'll do it normally.
+</p>
+<p>
+	NiceFileInput.js is a script based on the previous work of <strong>Shaun Inman</strong>, who defined the concept behind NiceFileInput 
+	( <a href="http://www.shauninman.com/archive/2007/09/10/styling_file_inputs_with_css_and_the_dom">Styling File Inputs with CSS and the DOM</a> ) 
+	and <strong>Mika Tuupola</strong>, who implemented nicely the idea in a jQuery plugin in some different way
+	( <a href="http://www.appelsiini.net/projects/filestyle">FileStyle</a>), so most of this plugin credit goes for them.
+</p>
+<p>
+	NiceFileInput degrades gracefully, if the user has no javascript enabled on the browser, a regular <code>&lt;input type="file" /&gt;</code> element
+	will be there.
+</p>
+
+<h3>Requirements</h3>
+<p>
+	NiceFileInput requires the jQuery library, available at the JQuery website
+	<a href="http://jquery.com" title="jQuery Library">jQuery.com</a>
+	or through the Google CDN's Content Distribution Network
+	<a href="http://code.google.com/intl/es/apis/libraries/devguide.html#jquery">Google Libraries API @ Google Code</a>
+</p>
+
+<h3>How to use it</h3>
+<ol>
+	<li>
+		<p>First, make sure you link the jQuery library and the NiceFileInput plugin to your Web page.</p>
+		<dl>
+			<dt>By using your local copy of jQuery:</dt>
+			<dd>
+				<pre>&lt;script src="<em>/your_path/</em>jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="<em>/your_path/</em>jquery.nicefileinput.min.js"&gt;&lt;/script&gt;</pre>
+			</dd>
+			<dt>Or using the Google CDN's</dt>
+			<dd>
+				<pre>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="<em>/your_path/</em>jquery.nicefileinput.min.js"&gt;&lt;/script&gt;</pre>				
+			</dd>
+		</dl>
+	</li>
+	<li>
+		<p>Insert the code which triggers the plugin on the jQuery Elements you want to apply it.</p>
+		<pre>&lt;script type="text/javascript"&gt;
+/* &lt;![CDATA[ */
+$(document).ready(function(){
+	// your code...
+	$("<strong>input[type=file]</strong>").nicefileinput();
+});
+/* ]]&gt; */
+&lt;/script&gt;</pre>
+		<p>You may optionally set the defult label text:</p>
+		<pre>$("input[type=file]").nicefileinput({ 
+	label : 'Examinar...' // Spanish label
+});</pre>
+	</li>
+</ol>
+
+<h3>Customize the input file with CSS</h3>
+		<p>You can fully customize the look and feel of your file input in two ways:</p>
+		<dl>
+			<dt>By using the same CSS code to stylize all your File Input elements through the following classes</dt>
+			<dd>
+				<pre>.NFI-wrapper {
+	// the container div
+}
+.NFI-button {
+	// the button div element
+}
+.NFI-filename {
+	// the text input element which collects and shows the value
+}</pre>
+			</dd>
+			<dt>Or setting the class atribute of the input file element you want to stylize individually</dt>
+			<dd><pre>// define a class on your HTML file input element
+// &lt;input type="file" <em>class="<strong>nice</strong>"</em> /&gt;
+// so you can now write your CSS code as follows:
+<em>.nice</em> {
+	// the container div	
+}
+<em>.nice .NFI-button</em> {
+	// the button div element
+}
+<em>.nice .NFI-filename</em> {
+	// the text input element which collects and shows the value
+}</pre></dd>
+</dl>
+
+<h3>Examples</h3>
+<dl class="examples-list">
+	<dt>Default fileinput browser render, no styles and no plugin.</dt>
+	<dd><p><input type="file" /></p></dd>
+
+	<dt>Plugin enabled but no CSS styles applied on the control.</dt>
+	<dd><p><input type="file" class="nicefileinput" /></p></dd>
+
+	<dt>Plugin enabled and CSS styling done over the element.</dt>
+	<dd><p><input type="file" class="nicefileinput nice" /></p></d>
+
+	<dt>Plugin enabled and different CSS styling done.</dt>
+	<dd><p><input type="file" class="nicefileinput nice test" /></p></d>
+</dl>
+
+<h3>Download</h3>
+<p><a href="https://github.com/alterebro/jQuery.NiceFileInput.js" id="download-link">jQuery.NiceFileInput.js @ GitHub</a></p>
+
+
+</body>
+</html>

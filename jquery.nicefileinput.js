@@ -21,8 +21,9 @@ Based on previous work of:
 			
 			if ($(self).attr('data-styled') === undefined) {
 			
+				var r = Math.round(Math.random()*10000);
 				var d = new Date();
-				var guid = d.getTime();
+				var guid = d.getTime()+r.toString();
 				
 				var filename = $('<input type="text" readonly="readonly">')
 					.css({

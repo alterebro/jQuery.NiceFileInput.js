@@ -12,7 +12,8 @@ Based on previous work of:
 (function($) {
 	$.fn.nicefileinput = function(options) {
 		var settings = { 
-			label : 'Browse...' // Default button text
+			label : 'Browse...', // Default button text
+                        fullPath: false
 		};
 		if(options) { $.extend(settings, options); };
 		
@@ -69,7 +70,15 @@ Based on previous work of:
 						'height': '60px'
 					})
 					.addClass('NFI-current');
-				$(self).bind("change", function() { filename.val($(self).val()); });
+				$(self).on("change", function() {
+                                	var fullPath = $(self).val();
+                                	if (settings.fullPath) {
+                                		filename.val(fullPath); 
+                                	} else {
+                                		var pathArray = fullPath.split(/[/\\]/);
+                                		filename.val(pathArray[pathArray.length - 1]);
+                                	}
+                                });
 				$(self).attr('data-styled', true);
 			}
 		});

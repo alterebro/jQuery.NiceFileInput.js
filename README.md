@@ -91,3 +91,8 @@ $(document).ready(function(){
 }</pre></dd>
 		</dl>
 
+
+<h3>Live Demo</h3>
+<p>
+	Live demo page: <a href="http://moro.es/misc/jquery-nicefileinput-js/" target="_blank">jQuery.NiceFileInput</a>
+</p>

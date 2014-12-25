@@ -1,6 +1,11 @@
 <h1><strong>NiceFileInput.js</strong> jQuery Plugin</h1>
 <h2>jQuery PlugIn which makes easy to stylize with CSS the file inputs at your forms.</h2>
 
+<h3>Live Demo</h3>
+<p>
+Live demo page: <a href="http://moro.es/projects/jquery-nicefileinput-js/" target="_blank">jQuery.NiceFileInput</a>
+</p>
+
 <h3>About</h3>
 <p>
 	Customizing the HTML file input elements (<code>&lt;input type="file" /&gt;</code>) is a time-consuming
@@ -90,9 +95,3 @@ $(document).ready(function(){
 	// the text input element which collects and shows the value
 }</pre></dd>
 		</dl>
-
-
-<h3>Live Demo</h3>
-<p>
-	Live demo page: <a href="http://moro.es/projects/jquery-nicefileinput-js/" target="_blank">jQuery.NiceFileInput</a>
-</p>

@@ -3,14 +3,14 @@
 
 <h3>About</h3>
 <p>
-	Customizing the HTML file input elements (<code>&lt;input type="file" /&gt;</code>) is a time-consuming 
-	task which doesnt result the same way on different browsers. NiceFileInput makes things easy and transforms 
-	the fileinputs on 3 different HTML elements (a text input, a button and a div container) which you can 
+	Customizing the HTML file input elements (<code>&lt;input type="file" /&gt;</code>) is a time-consuming
+	task which doesnt result the same way on different browsers. NiceFileInput makes things easy and transforms
+	the fileinputs on 3 different HTML elements (a text input, a button and a div container) which you can
 	style with CSS the way you'll do it normally.
 </p>
 <p>
-	NiceFileInput.js is a script based on the previous work of <strong>Shaun Inman</strong>, who defined the concept behind NiceFileInput 
-	( <a href="http://www.shauninman.com/archive/2007/09/10/styling_file_inputs_with_css_and_the_dom">Styling File Inputs with CSS and the DOM</a> ) 
+	NiceFileInput.js is a script based on the previous work of <strong>Shaun Inman</strong>, who defined the concept behind NiceFileInput
+	( <a href="http://www.shauninman.com/archive/2007/09/10/styling_file_inputs_with_css_and_the_dom">Styling File Inputs with CSS and the DOM</a> )
 	and <strong>Mika Tuupola</strong>, who implemented nicely the idea in a jQuery plugin in some different way
 	( <a href="http://www.appelsiini.net/projects/filestyle">FileStyle</a>), so most of this plugin credit goes for them.
 </p>
@@ -40,7 +40,7 @@
 			<dt>Or using the Google CDN's</dt>
 			<dd>
 				<pre>&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script src="<em>/your_path/</em>jquery.nicefileinput.min.js"&gt;&lt;/script&gt;</pre>				
+&lt;script src="<em>/your_path/</em>jquery.nicefileinput.min.js"&gt;&lt;/script&gt;</pre>
 			</dd>
 		</dl>
 	</li>
@@ -55,7 +55,7 @@ $(document).ready(function(){
 /* ]]&gt; */
 &lt;/script&gt;</pre>
 		<p>You may optionally set the defult label text:</p>
-		<pre>$("input[type=file]").nicefileinput({ 
+		<pre>$("input[type=file]").nicefileinput({
 	label : 'Examinar...' // Spanish label
 });</pre>
 	</li>
@@ -81,7 +81,7 @@ $(document).ready(function(){
 // &lt;input type="file" <em>class="<strong>nice</strong>"</em> /&gt;
 // so you can now write your CSS code as follows:
 <em>.nice</em> {
-	// the container div	
+	// the container div
 }
 <em>.nice .NFI-button</em> {
 	// the button div element
@@ -94,5 +94,5 @@ $(document).ready(function(){
 
 <h3>Live Demo</h3>
 <p>
-	Live demo page: <a href="http://moro.es/misc/jquery-nicefileinput-js/" target="_blank">jQuery.NiceFileInput</a>
+	Live demo page: <a href="http://moro.es/projects/jquery-nicefileinput-js/" target="_blank">jQuery.NiceFileInput</a>
 </p>

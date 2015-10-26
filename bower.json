@@ -4,6 +4,7 @@
     "main": "jquery.nicefileinput.min.js",
     "description": "jQuery Plugin which makes file input CSS styling an easy task.",
     "license": "MIT",
+    "homepage": "http://moro.es/projects/jquery-nicefileinput-js/",
     "keywords": [
         "jquery",
         "plugin",
@@ -16,5 +17,8 @@
     ],
     "dependencies": {
         "jquery": ">=1.7"
-    }
+    },
+    "ignore": [
+        "**/.*"
+    ]
 }

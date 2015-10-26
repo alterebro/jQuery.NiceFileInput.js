@@ -44,6 +44,7 @@ Based on previous work of:
 						'text-align': 'center'
 					})
 					.addClass('NFI-button NFI'+guid)
+					.attr('disabled', $(self).attr("disabled"))
 					.html(settings.label);
 				
 				

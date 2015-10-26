@@ -1,0 +1,20 @@
+{
+    "name": "jquery.nicefileinput",
+    "version": "1.0.0",
+    "main": "jquery.nicefileinput.min.js",
+    "description": "jQuery Plugin which makes file input CSS styling an easy task.",
+    "license": "MIT",
+    "keywords": [
+        "jquery",
+        "plugin",
+        "file",
+        "input",
+        "css"
+    ],
+    "authors": [
+        "Jorge Moreno @alterebro"
+    ],
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
